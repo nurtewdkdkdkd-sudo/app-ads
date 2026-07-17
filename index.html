@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Merciyes uygulaması için AdMob app-ads.txt doğrulama sayfası.">
+    <title>Merciyes · AdMob Doğrulama</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --ink: #f3efe4;
+        --muted: #a8a292;
+        --surface: #24251f;
+        --line: #45463a;
+        --accent: #d8d47a;
+        --background: #181914;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        color: var(--ink);
+        background: radial-gradient(circle at 18% 15%, rgba(216, 212, 122, 0.12), transparent 28rem), var(--background);
+        font-family: "Trebuchet MS", sans-serif;
+      }
+
+      main {
+        width: min(100%, 720px);
+        padding: clamp(28px, 6vw, 64px);
+        border: 1px solid var(--line);
+        border-radius: 28px 8px 28px 8px;
+        background: var(--surface);
+        box-shadow: 18px 18px 0 rgba(0, 0, 0, 0.18);
+      }
+
+      .eyebrow {
+        margin: 0 0 20px;
+        color: var(--accent);
+        font: 700 0.78rem/1.2 "Courier New", monospace;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 12ch;
+        margin: 0;
+        font: 600 clamp(2.5rem, 8vw, 5.5rem)/0.92 Georgia, serif;
+        letter-spacing: -0.06em;
+      }
+
+      p {
+        max-width: 52ch;
+        margin: 28px 0;
+        color: var(--muted);
+        font-size: 1.05rem;
+        line-height: 1.7;
+      }
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        min-height: 52px;
+        padding: 0 20px;
+        border: 1px solid var(--accent);
+        color: var(--background);
+        background: var(--accent);
+        font-weight: 700;
+        text-decoration: none;
+        transition: transform 180ms ease, background 180ms ease, color 180ms ease;
+      }
+
+      a::after { content: "↗"; font-size: 1.25rem; }
+      a:hover { color: var(--accent); background: transparent; transform: translateY(-3px); }
+      a:focus-visible { outline: 3px solid var(--ink); outline-offset: 4px; }
+
+      .status {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 36px;
+        color: var(--ink);
+        font: 0.82rem/1.4 "Courier New", monospace;
+      }
+
+      .status::before {
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: var(--accent);
+        content: "";
+        box-shadow: 0 0 0 5px rgba(216, 212, 122, 0.12);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">Merciyes · Yetkili Satıcı Kaydı</p>
+      <h1>AdMob doğrulaması hazır.</h1>
+      <p>Uygulamanın Google reklam envanteri yetkilendirme kaydını düz metin olarak görüntülemek için aşağıdaki bağlantıyı açın.</p>
+      <a href="/app-ads.txt">app-ads.txt dosyasını aç</a>
+      <div class="status">Dosya yayın kökünde ve herkese açık</div>
+    </main>
+  </body>
+</html>
