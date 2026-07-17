@@ -1,2 +1,9 @@
+# Google AdMob
 google.com, pub-8722203655734627, DIRECT, f08c47fec0942fa0
+
+# Diğer ağlar (kullandığın varsa ekle, yoksa şimdilik bunları bırak)
+# applovin.com, YOUR_APPLovin_PUBLISHER_ID, DIRECT, YOUR_ACCOUNT_ID
+# facebook.com, YOUR_FACEBOOK_ID, DIRECT, YOUR_ACCOUNT_ID
+# ironsource.com, YOUR_IRONSOURCE_ID, DIRECT, YOUR_ACCOUNT_ID
+# unity.com, YOUR_UNITY_ID, DIRECT, YOUR_ACCOUNT_ID
 
